@@ -1,0 +1,41 @@
+According to the following sentiment elements definition: 
+
+- The 'aspect term' refers to a specific feature, attribute, or aspect of a product or service that a user may express an opinion about, the aspect term might be 'null' for implicit aspect.
+- The 'opinion term' refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service, the aspect term might be 'null' for implicit opinion. 
+- The 'aspect category' refers to the category that aspect belongs to, and the available catgories includes: 'location general', 'food prices', 'food quality', 'food general', 'ambience general', 'service general', 'restaurant prices', 'drinks prices', 'restaurant miscellaneous', 'drinks quality', 'drinks style_options', 'restaurant general' and 'food style_options'. 
+- The 'sentiment polarity' refers to the degree of positivity, negativity or neutrality expressed in the opinion towards a particular aspect or feature of a product or service, and the available polarities inlcudes: 'positive', 'negative' and 'neutral'.
+
+Recognize all sentiment elements with their corresponding aspect terms, aspect categories, opinion terms and sentiment polarity in the following text with the format of [('aspect term', 'aspect category', 'sentiment polarity', 'opinion term'), ...]:
+
+Text: im not necessarily fanatical about this place , but it was a fun time for low pirces .
+Sentiment Elements: [('place', 'restaurant general', 'positive', 'fanatical'), ('place', 'restaurant prices', 'positive', 'low')]
+
+Text: my dark and stormy with ginger beer was a good 2nd choice since they didn't know the gin gin mule ( btw ggm so yummy ) .the food also hit the spot .
+Sentiment Elements: [('food', 'food quality', 'positive', 'null'), ('dark and stormy with ginger beer', 'drinks quality', 'positive', 'good'), ('ggm', 'food quality', 'positive', 'so yummy')]
+
+Text: ) i 'm looking forward to trying the other bowls and tacos on the menu .
+Sentiment Elements: [('other bowls', 'food quality', 'positive', 'null'), ('tacos', 'food quality', 'positive', 'null')]
+
+Text: had a good time and would give it a grade of a high b or low a .
+Sentiment Elements: [('null', 'restaurant general', 'positive', 'good')]
+
+Text: noise level is off the charts.it used to be a great place to dine before it got overly popular , like the rest of the republic of boulder .
+Sentiment Elements: [('place', 'restaurant general', 'positive', 'great'), ('noise', 'ambience general', 'negative', 'null')]
+
+Text: the menu and dining room aspire for greatness , but the trimmings scream big lots .
+Sentiment Elements: [('dining room', 'restaurant general', 'positive', 'greatness'), ('menu', 'food quality', 'positive', 'greatness'), ('trimmings', 'ambience general', 'negative', 'null')]
+
+Text: i 'd try it again , though and try a few of their other pitas .
+Sentiment Elements: [('null', 'restaurant general', 'positive', 'null')]
+
+Text: and veggie sushi-friendly servicecons : -occasionally ask for brown rice and get white rice , small things like that , but they will make it right-prices have gone up ( seems like theyve gone up everywhere in austin ) -sometimes hard to get drink refills-super nit-picky but bathrooms are n't greatconsensus :5 starts here for a counter-service japanese restaurant great for an easy meal
+Sentiment Elements: [('servicecons', 'service general', 'positive', 'sushi-friendly'), ('japanese restaurant', 'restaurant general', 'positive', 'great'), ('bathrooms', 'restaurant general', 'positive', 'greatconsensus')]
+
+Text: flavors were good but a little lacking in the well rounded or exciting department of things , a little one note but hey , its disney .
+Sentiment Elements: [('flavors', 'food quality', 'positive', 'good')]
+
+Text: my mango smoothie tasted like it was going sour .
+Sentiment Elements: [('mango smoothie', 'food quality', 'negative', 'sour')]
+
+Text: it 's nice to walk in and still see nick ( one of them , not the other ) still behind the counter sometimes.they recently ( last 4 years ) renovated the inside to update the seating and walls and such .
+Sentiment Elements: [('nick', 'restaurant general', 'positive', 'nice')]

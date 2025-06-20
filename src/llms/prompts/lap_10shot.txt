@@ -1,0 +1,38 @@
+According to the following sentiment elements definition: 
+
+- The 'aspect term' refers to a specific feature, attribute, or aspect of a product or service that a user may express an opinion about, the aspect term might be 'null' for implicit aspect.
+- The 'opinion term' refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service, the aspect term might be 'null' for implicit opinion. 
+- The 'aspect category' refers to the category that aspect belongs to, and the available catgories includes: 'keyboard operation_performance', 'os operation_performance', 'out_of_scope operation_performance', 'ports general', 'optical_drives general', 'laptop operation_performance', 'optical_drives operation_performance', 'optical_drives usability', 'multimedia_devices general', 'keyboard general', 'os miscellaneous', 'software operation_performance', 'display operation_performance', 'shipping quality', 'hard_disc quality', 'motherboard general', 'graphics general', 'multimedia_devices connectivity', 'display general', 'memory operation_performance', 'os design_features', 'out_of_scope usability', 'software design_features', 'graphics design_features', 'ports connectivity', 'support design_features', 'display quality', 'software price', 'shipping general', 'graphics operation_performance', 'hard_disc miscellaneous', 'display design_features', 'cpu operation_performance', 'mouse general', 'keyboard portability', 'hardware price', 'support quality', 'hardware quality', 'motherboard operation_performance', 'multimedia_devices quality', 'battery design_features', 'mouse usability', 'os price', 'shipping operation_performance', 'laptop quality', 'laptop portability', 'fans&cooling general', 'battery general', 'os usability', 'hardware usability', 'optical_drives design_features', 'fans&cooling operation_performance', 'memory general', 'company general', 'power_supply general', 'hardware general', 'mouse design_features', 'software general', 'keyboard quality', 'power_supply quality', 'software quality', 'multimedia_devices usability', 'power_supply connectivity', 'multimedia_devices price', 'multimedia_devices operation_performance', 'ports design_features', 'hardware operation_performance', 'shipping price', 'hardware design_features', 'memory usability', 'cpu quality', 'ports quality', 'ports portability', 'motherboard quality', 'display price', 'os quality', 'graphics usability', 'cpu design_features', 'hard_disc general', 'hard_disc operation_performance', 'battery quality', 'laptop usability', 'company design_features', 'company operation_performance', 'support general', 'fans&cooling quality', 'memory design_features', 'ports usability', 'hard_disc design_features', 'power_supply design_features', 'keyboard miscellaneous', 'laptop miscellaneous', 'keyboard usability', 'cpu price', 'laptop design_features', 'keyboard price', 'warranty quality', 'display usability', 'support price', 'cpu general', 'out_of_scope design_features', 'out_of_scope general', 'software usability', 'laptop general', 'warranty general', 'company price', 'ports operation_performance', 'power_supply operation_performance', 'keyboard design_features', 'support operation_performance', 'hard_disc usability', 'os general', 'company quality', 'memory quality', 'software portability', 'fans&cooling design_features', 'multimedia_devices design_features', 'laptop connectivity', 'battery operation_performance', 'hard_disc price', 'laptop price'.
+- The 'sentiment polarity' refers to the degree of positivity, negativity or neutrality expressed in the opinion towards a particular aspect or feature of a product or service, and the available polarities inlcudes: 'positive', 'negative' and 'neutral'.
+
+Recognize all sentiment elements with their corresponding aspect terms, aspect categories, opinion terms and sentiment polarity in the following text with the format of [('aspect term', 'aspect category', ''sentiment polarity', 'opinion term'), ...]:
+
+Text: it boots in seconds , and i get ~ 10 hours out of the battery .
+Sentiment Elements: [('boots', 'os operation_performance', 'positive', 'null'), ('battery', 'battery operation_performance', 'positive', 'null')]
+
+Text: the support website is incompetent .
+Sentiment Elements: [('support website', 'support general', 'negative', 'incompetent')]
+
+Text: but i fed up with the price it cost to upgrade the product as well as the software .
+Sentiment Elements: [('null', 'laptop price', 'negative', 'fed up')]
+
+Text: touch screen is really responsive .
+Sentiment Elements: [('touch screen', 'display operation_performance', 'positive', 'responsive')]
+
+Text: i woudlnt recommend more than 10 active tabs which slows down some of the functionality but otherwise runs smoothly for students
+Sentiment Elements: [('null', 'laptop operation_performance', 'positive', 'recommend'), ('null', 'laptop operation_performance', 'positive', 'smoothly')]
+
+Text: the c302 is clean and feels solid .
+Sentiment Elements: [('c302', 'laptop design_features', 'positive', 'clean'), ('c302', 'laptop design_features', 'positive', 'solid')]
+
+Text: i ended up returning it even after getting a credit because the wireless did not work well and was extremely slow .
+Sentiment Elements: [('wireless', 'ports connectivity', 'negative', 'not work well'), ('wireless', 'ports connectivity', 'negative', 'slow')]
+
+Text: i did not get what i originally paid for .
+Sentiment Elements: [('null', 'laptop general', 'negative', 'null')]
+
+Text: this is now my fastest - charging device .
+Sentiment Elements: [('device', 'laptop operation_performance', 'positive', 'fastest')]
+
+Text: as everyone else says ; the keyboard is not backlit .
+Sentiment Elements: [('keyboard', 'keyboard design_features', 'negative', 'null')]

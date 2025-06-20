@@ -1,0 +1,38 @@
+According to the following sentiment elements definition: 
+
+- The 'aspect term' refers to a specific feature, attribute, or aspect of a product or service that a user may express an opinion about, the aspect term might be 'null' for implicit aspect.
+- The 'opinion term' refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service, the aspect term might be 'null' for implicit opinion. 
+- The 'aspect category' refers to the category that aspect belongs to, and the available catgories includes: 'book author', 'content plot', 'book quality', 'none', 'book audience', 'service general', 'book length', 'book structure', 'derivatives general', 'book general', 'content characters', 'content genre', 'book prices', 'book title'. 
+- The 'sentiment polarity' refers to the degree of positivity, negativity or neutrality expressed in the opinion towards a particular aspect or feature of a product or service, and the available polarities inlcudes: 'positive', 'negative' and 'neutral'.
+
+Recognize all sentiment elements with their corresponding aspect terms, aspect categories, opinion terms and sentiment polarity in the following text with the format of [('aspect term', 'aspect category', 'sentiment polarity', 'opinion term'), ...]:
+
+Text: i would like to think that amazon doesn't know about it.ok ... good to know after i finished this semi-edited narrative .
+Sentiment Elements: [('narrative', 'book quality', 'negative', 'null')]
+
+Text: i am not doing justice to the book - it just fantastic - i feel extremely educated about cancer , the therapy used and how it came about - also where we are now .
+Sentiment Elements: [('book', 'book general', 'positive', 'justice'), ('book', 'book general', 'positive', 'fantastic')]
+
+Text: i am glad i did , but the ending made it all worth while .
+Sentiment Elements: [('ending', 'content plot', 'positive', 'worth')]
+
+Text: learning about the culture , mores , and swedish countryside is an enjoyable element to these books.the books are filled with many characters who , at times , are hard to remember and track their value to the story .
+Sentiment Elements: [('characters', 'content characters', 'negative', 'null'), ('element', 'content plot', 'positive', 'enjoyable')]
+
+Text: i skipped some parts just to get to the end .
+Sentiment Elements: [('null', 'content plot', 'negative', 'null')]
+
+Text: from beginning to end i found this book to be absolutely wonderful .
+Sentiment Elements: [('book', 'book general', 'positive', 'absolutely wonderful')]
+
+Text: adventure and a good writing voice await you , just don't get your hopes up at the outset when the story feels like an angels and demons coming on .
+Sentiment Elements: [('writing voice', 'book quality', 'positive', 'good'), ('outset', 'content plot', 'negative', "don't get your hopes up")]
+
+Text: there is always a red herring or two to keep me guessing and interested .
+Sentiment Elements: [('null', 'content plot', 'positive', 'interested'), ('null', 'content plot', 'positive', 'null')]
+
+Text: this book was a compelling story as well as some of the clearest science writing i have read in years .
+Sentiment Elements: [('writing', 'book quality', 'positive', 'clearest'), ('story', 'content plot', 'positive', 'compelling')]
+
+Text: i feel way more informed if i were to get cancer as to the treatment options .
+Sentiment Elements: [('null', 'book general', 'positive', 'null')]

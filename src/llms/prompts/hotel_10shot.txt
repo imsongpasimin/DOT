@@ -1,0 +1,38 @@
+According to the following sentiment elements definition: 
+
+- The 'aspect term' refers to a specific feature, attribute, or aspect of a product or service that a user may express an opinion about, the aspect term might be 'null' for implicit aspect.
+- The 'opinion term' refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service, the aspect term might be 'null' for implicit opinion. 
+- The 'aspect category' refers to the category that aspect belongs to, and the available catgories includes: 'rooms general', 'hotel comfort', 'facilities cleanliness', 'room_amenities quality', 'location general', 'food_drinks general', 'room_amenities cleanliness', 'hotel general', 'rooms design_features', 'rooms cleanliness', 'facilities design_features', 'hotel cleanliness', 'food_drinks style_options', 'facilities prices', 'hotel design_features', 'hotel prices', 'rooms quality', 'room_amenities design_features', 'hotel quality', 'room_amenities comfort', 'rooms comfort', 'facilities comfort', 'facilities general', 'room_amenities general', 'service general', 'food_drinks quality', 'facilities quality'. 
+- The 'sentiment polarity' refers to the degree of positivity, negativity or neutrality expressed in the opinion towards a particular aspect or feature of a product or service, and the available polarities inlcudes: 'positive', 'negative' and 'neutral'.
+
+Recognize all sentiment elements with their corresponding aspect terms, aspect categories, opinion terms and sentiment polarity in the following text with the format of [('aspect term', 'aspect category', 'sentiment polarity', 'opinion term'), ...]:
+
+Text: the living room is really cozy , with a lot of space .
+Sentiment Elements: [('living room', 'rooms comfort', 'positive', 'really cozy'), ('living room', 'rooms design_features', 'positive', 'null')]
+
+Text: he was the best host i had ever met so far .
+Sentiment Elements: [('null', 'service general', 'positive', 'best')]
+
+Text: i arrived by 1am and it was all set up for me to crash .
+Sentiment Elements: [('null', 'service general', 'positive', 'null')]
+
+Text: the view beautiful , relaxing and peaceful .
+Sentiment Elements: [('view', 'location general', 'positive', 'beautiful'), ('view', 'location general', 'positive', 'peaceful'), ('view', 'location general', 'positive', 'relaxing')]
+
+Text: valerie and jason 's place was wonderful !
+Sentiment Elements: [('valerie and jason', 'hotel general', 'positive', 'wonderful'), ("'s place", 'hotel general', 'positive', 'wonderful')]
+
+Text: tiffany made is feel welkom by leasing a note with tips and suggestions .
+Sentiment Elements: [('note with tips and suggestions', 'service general', 'positive', 'welkom')]
+
+Text: great place and super nice people !
+Sentiment Elements: [('place', 'hotel general', 'positive', 'great'), ('people', 'service general', 'positive', 'super nice')]
+
+Text: in fact , i actually slept better at his place than at my own home !
+Sentiment Elements: [('place', 'hotel comfort', 'positive', 'better')]
+
+Text: we did n't meet terry , but everything was prepared for our stay , and we would definitely come back there if we go to boston again .
+Sentiment Elements: [('terry', 'service general', 'positive', 'null')]
+
+Text: tiffany 's place is a great place to stay if you find yourself in boston .
+Sentiment Elements: [("tiffany 's place", 'hotel general', 'positive', 'great')]
