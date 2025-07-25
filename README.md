@@ -55,7 +55,6 @@ Install PyTorch (CUDA 11.6 build) and the remaining dependencies:
 pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 \
   --extra-index-url https://download.pytorch.org/whl/cu116
 
-# Make sure the filename matches your repo (requirements.txt vs. requirments.txt)
 pip install -r requirements.txt
 ```
 
