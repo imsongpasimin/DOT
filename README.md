@@ -6,6 +6,8 @@
 ---
 
 ## 📌 Abstract
+<img width="523" height="457" alt="image" src="https://github.com/user-attachments/assets/979657a2-292d-4aa2-a111-c98195a185da" />
+
 
 Aspect-based sentiment analysis (ABSA) extracts fine-grained **sentiment tuples** (e.g., ⟨aspect, opinion, sentiment⟩) from text. Prior template-based approaches relied on **static, fixed-order templates**, which often miss inter-element dependencies. Multi-view prompting remedies this by predicting tuples with multiple templates and aggregating them, but it introduces **heavy inference costs and out-of-distribution (OOD) errors**.
 
