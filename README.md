@@ -103,11 +103,23 @@ Make sure you are still in the `src` directory when executing the Python scripts
 If you find this repo helpful, please cite our work:
 
 ```bibtex
-@inproceedings{jun2025dot,
-  title     = {Dynamic Order Template Prediction for Generative Aspect-Based Sentiment Analysis},
-  author    = {Jun, Yonghyun and Lee, Hwanhee and Others},
-  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics},
-  year      = {2025}
+@inproceedings{jun-lee-2025-dynamic,
+    title = "Dynamic Order Template Prediction for Generative Aspect-Based Sentiment Analysis",
+    author = "Jun, Yonghyun  and
+      Lee, Hwanhee",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-short.48/",
+    pages = "614--626",
+    ISBN = "979-8-89176-252-7",
+    abstract = "Aspect-based sentiment analysis (ABSA) assesses sentiments towards specific aspects within texts, resulting in detailed sentiment tuples.Previous ABSA models often used static templates to predict all the elements in the tuples, and these models often failed to accurately capture dependencies between elements. Multi-view prompting method improves the performance of ABSA by predicting tuples with various templates and then assembling the results. However, this method suffers from inefficiencies and out-of-distribution errors. In this paper, we propose a Dynamic Order Template (DOT) method for ABSA, which dynamically creates an order template that contains only the necessary views for each instance. Ensuring the diverse and relevant view generation, our proposed method improves F1 scores on ASQP and ACOS datasets while significantly reducing inference time."
 }
 ```
 
