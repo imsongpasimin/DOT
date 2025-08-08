@@ -1,4 +1,4 @@
-# Dynamic Order Template (DOT) for Generative Aspect-Based Sentiment Analysis
+# Dynamic Order Template Prediction for Generative Aspect-Based Sentiment Analysis
 
 > **ACL 2025 · Main Track**
 > Official PyTorch implementation of **“Dynamic Order Template Prediction for Generative Aspect-Based Sentiment Analysis.”**
